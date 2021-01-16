@@ -24,7 +24,8 @@ class PhoneNumber
   private
 
   def invalid?(clean_number)
-    if clean_number.length < 10 || clean_number.length > 11 || (clean_number[0] != '1' && clean_number.length > 10) || clean_number.match(/[a-zA-Z]/)
+    if clean_number.length < 10 || clean_number.length > 11 ||
+	    (clean_number[0] != '1' && clean_number.length > 10) || clean_number.match(/[a-zA-Z]/)
       return true
     end
 
